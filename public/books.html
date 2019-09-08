@@ -13,121 +13,132 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </head>
-  <div class="container">
-      <header class="row">
-          <p>Booklist</p>
-
-      </header>
-
-        <div class="container">
-            <header class="row">
-                <nav class="row navbar navbar-default">
-                    <ul class="nav navbar-nav">
-                      <li><a href="index.html">Home</a></li>
-                      <li><a href="aboutme.html">About Me</a></li>
-                      <li><a href="books.html">Books</a></li>
-                      </ul>
-                </nav>
-                <main class="row">
-      </header>
-<img src="IMG/library.jpg" height=200/>
 
 <body>
-            <table style="width:100%">
-              <tr>
-                <th>Title</th>
-                <th>Author(s)</th>
-                <th>Year Published</th>
-                <th>Publisher</th>
-                <th>Page Count</th>
-                <th>MSRP</th>
-              </tr>
-              <tr>
-                <td>A Thousand Splendid Suns</td>
-                <td>Khalid Hosseni</td>
-                <td>2007</td>
-                <td>Penguin Publishing</td>
-                <td>250</td>
-                <td>25</td>
-              </tr>
-              <tr>
-                <td>Kite Runner</td>
-                <td>Khalid Hosseni</td>
-                <td>2005</td>
-                <td>Penguin Publisher</td>
-                <td>350</td>
-                <td>20</td>
-              </tr>
-              <tr>
-                <td>The Power of Habit</td>
-                <td>Charles Duhigg</td>
-                <td>2014</td>
-                <td>Random House Publishing Group</td>
-                <td>285</td>
-                <td>30</td>
-              </tr>
-              <tr>
-                <td>The Secret</td>
-                <td>Rhonda Byrne</td>
-                <td>2008</td>
-                <td>Innovative Publisher</td>
-                <td>185</td>
-                <td>28</td>
-              </tr>
-</table>
-              <h2>Add Wishlist Items</h2>
+<div class="container">
+<nav class="row navbar navbar-default">
+    <ul class="nav navbar-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutme.html">About Me</a></li>
+      <li><a href="books.html">Books</a></li>
+      </ul>
+</nav>
+</div>
+
+<main>
+  <div class="container">
+  <img src="IMG/library.jpg" height=200/>
+
+  <br><br>
+  <table class="table" id="bookTable">
+    <thead>
+    <tr>
+      <th scope="col">Title</th>
+      <th scope="col">Author(s)</th>
+      <th scope="col">Year Published</th>
+      <th scope="col">Publisher</th>
+      <th scope="col">Page Count</th>
+      <th scope="col">MSRP</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>A Thousand Splendid Suns</td>
+      <td>Khalid Hosseni</td>
+      <td>2007</td>
+      <td>Penguin Publishing</td>
+      <td>250</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>Kite Runner</td>
+      <td>Khalid Hosseni</td>
+      <td>2005</td>
+      <td>Penguin Publisher</td>
+      <td>350</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>The Power of Habit</td>
+      <td>Charles Duhigg</td>
+      <td>2014</td>
+      <td>Random House Publishing Group</td>
+      <td>285</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>The Secret</td>
+      <td>Rhonda Byrne</td>
+      <td>2008</td>
+      <td>Innovative Publisher</td>
+      <td>185</td>
+      <td>28</td>
+    </tr>
+    </tbody>
+  </table>
+
+  <h2>Add Wishlist Items</h2>
             <!-- bootstrap document -->
-         <form>
-                <div class="form-row">
-                  <div class="form-group col-md-12">
-                    <label for="inputTitle">Title of books</label>
-                    <input type="text" class="form-control" id="inputTItle">
-                    </div>
-                  </div>
-        </form>
-
-        <form>
-               <div class="form-row">
-                 <div class="form-group col-md-12">
-                   <label for="inputAuthor(s)">Author(s)</label>
-                   <input type="text" class="form-control" id="inputAuthor(s)">
-                   </div>
-                 </div>
-       </form>
-
-       <form>
-              <div class="form-row">
-                <div class="form-group col-md-12">
-                  <label for="inputYearPublished">Year Published</label>
-                  <input type="number" class="form-control" id="YearPublished">
-                  </div>
-                </div>
-      </form>
-
-      <form>
-             <div class="form-row">
-               <div class="form-group col-md-12">
-                 <label for="inputPublisher">Publisher</label>
-                 <input type="text" class="form-control" id="Publisher">
-                 </div>
-               </div>
-     </form>
-
-     <form>
-            <div class="form-row">
-              <div class="form-group col-md-12">
-                <label for="inputPageCount">Page Count</label>
-                <input type="number" class="form-control" id="inputPageCount">
-                </div>
+   <form>
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              <label for="inputTitle">Title of books</label>
+              <input type="text" class="form-control" id="inputTItle">
               </div>
-    </form>
+            </div>
+  </form>
 
     <form>
-           <div class="form-row">
-             <div class="form-group col-md-12">
-               <label for="inputMSRP">MSRP</label>
-               <input type="float" class="form-control" id="inputMSRP">
-               </div>
+         <div class="form-row">
+           <div class="form-group col-md-12">
+             <label for="inputAuthor(s)">Author(s)</label>
+             <input type="text" class="form-control" id="inputAuthor(s)">
              </div>
-   </form>
+           </div>
+         </form>
+
+   <form>
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              <label for="inputYearPublished">Year Published</label>
+              <input type="number" class="form-control" id="YearPublished">
+              </div>
+            </div>
+  </form>
+
+  <form>
+         <div class="form-row">
+           <div class="form-group col-md-12">
+             <label for="inputPublisher">Publisher</label>
+             <input type="text" class="form-control" id="Publisher">
+             </div>
+           </div>
+  </form>
+
+   <form>
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              <label for="inputPageCount">Page Count</label>
+              <input type="number" class="form-control" id="inputPageCount">
+              </div>
+            </div>
+  </form>
+
+  <form>
+         <div class="form-row">
+           <div class="form-group col-md-12">
+             <label for="inputMSRP">MSRP</label>
+             <input type="float" class="form-control" id="inputMSRP">
+             </div>
+           </div>
+ </form>
+ </div>
+
+<!-- Sourced from http://tristen.ca/tablesort/demo/ -->
+ <script src="JS/tablesort.min.js"></script>
+ <script>
+  new Tablesort(document.getElementById('bookTable'));
+</script>
+
 </body>
+</html>
