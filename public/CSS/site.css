@@ -1,0 +1,19 @@
+table {border-collapse: collapse;}
+
+table {
+            width: 80%;
+            max-width: 300px;
+      }
+
+        td, th {
+            padding: 4px;
+        }
+
+        th {
+            text-align: center;
+        }
+
+        thead {
+            background-color: red;
+            color: black;
+        }
