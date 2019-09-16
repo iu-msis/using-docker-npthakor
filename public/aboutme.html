@@ -14,7 +14,7 @@
 
 </head>
 <body>
-  <div class="container">
+  <div class="container" id=patientWaitingApp>
       <header class="row">
 
       </header>
@@ -26,13 +26,16 @@
             <li><a href="books.html">Books</a></li>
             </ul>
       </nav>
-<img src="IMG/FakeDP.jpeg" height=200/>
+      
 
       <main class="row">
 
-         <p> My name is Nakul Thakore and I welcome you to my webpage. Here I wish to include the books I highly recommend people should read.
+         <p> My name is {{random_user.name.first}} {{random_user.name.last}} and I welcome you to my webpage. I was born on {{random_user.dob.date}}. I am {{random_user.dob.age}} now, and I am from {{random_user.location.timezone.description}} Here I wish to include the books I highly recommend people should read.
             I also provide details about how long the books are, as well as their cost, and author information along with a few more details of each book.
             Thank you for visiting my webpage.
           </p>
-
+        </main>
+      </div>
+          <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+          <script src="js/waiting.app.js"></script>
 </body>
